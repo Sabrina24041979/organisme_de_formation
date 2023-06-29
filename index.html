@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Static Project</title>
+    <meta name="description" content="One page website using simple css class for mobile optimization...">
+    <meta property="og:title" content="Mobile First Static Project" />
+    <meta property="og:description" content="One page website using simple css class for mobile optimization..." />
+    <link rel="stylesheet" href="assets/css/w3css.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        main{
+            margin-top: 100px;
+        }
+        section{
+            scroll-margin-top:50px
+        }
+        
+    #home{
+       height: 350px;
+       background-image: url("assets/image/background__header.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+    }
+    section h2{
+        text-align:center;
+    }
+
+    footer{
+       height: 350px;
+       background-image: url("assets/image/background__header.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+    }
+
+    h2{
+        background-image: url("assets/image/background__h2.jpg")
+        text-align: center;
+    }
+
+    #btnToTop{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 3;
+        }
+
+    footer img {
+        display:flex
+        position:
+        weight:25px;
+        width: 25px;
+        float: center;
+    }
+    </style>
+
+</head>
+<body>
+    <!--HEADER START-->
+
+
+    <header class="w3-top w3-white">
+        <nav id="desktopNav" class="w3-bar w3-border-bottom">
+
+            <a href="javascript:void(0)" onclick="toogleNavbar()"class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right"> 
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <a href="#home" onclick="homeHideNavbar()" class="w3-bar-idem w3-button">Home</a>
+            <a href="#about" class="w3-bar-idem w3-button w3-hide-small">About</a>
+            <a href="#portfolio" class="w3-bar-idem w3-button w3-hide-small">Portfolio</a>
+            <a href="#contact" class="w3-bar-idem w3-button w3-hide-small">Contact</a>
+            
+        </nav>
+
+        <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
+            <a hreh="#about" onclick="toogleNavbar()" class="w3-bar-item w3-button">About</a>
+            <a hreh="#portfolio" onclick="toogleNavbar()" class="w3-bar-item w3-button">Portfolio</a>
+            <a hreh="#contact" onclick="toogleNavbar()" class="w3-bar-item w3-button">Contact</a>
+        </nav>
+
+    </header>
+
+    <!--HEADER END-->
+
+    <button id="btnToTop" class="w3-hide w3-black w3-animate-opacity">
+        <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
+    </button>
+
+    <!--MAIN START-->
+    <main class="w3-container">
+            <!--HOME SECTION START-->
+            <section id="home" class="w3-display-container">
+                <h1 class="w3-black w3-center w3-display-middle w3-white" w3->Organisme de formation</h1>
+          
+            </section>
+            <!--HOME SECTION END-->
+            <!--ABOUT SECTION START-->
+            <section id="about">
+                <h2 class="w3-black w3-white">About</h2>
+                    <div class="w3-row">
+                        <div class="w3-half">
+                         <img src="assets/image/groupe_de_formation.jpg" alt="groupe de formationt" class="w3-image" style="width:100%">
+                        </div>
+                        <div class="w3-half w3-padding">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex, repudiandae nisi beatae unde dicta aspernatur est asperiores numquam sequi voluptates quisquam sapiente a ipsam sit dolorem, quas sunt fugit quod. Nostrum ratione harum nemo, veniam minus praesentium perferendis vel porro nulla atque. Id similique minus commodi. Magni excepturi iure voluptate. Voluptate modi tempora distinctio quos quae ea, laborum optio dolorum iste nesciunt cupiditate eaque doloribus assumenda maxime culpa expedita. Quidem enim similique non. Officia expedita maxime vel est optio ratione quasi eum itaque. Quisquam explicabo officia totam, esse modi culpa rerum odit dolorum in optio maiores exercitationem labore dolores, neque illo porro! Quos eligendi repudiandae perspiciatis, hic animi exercitationem natus? Cupiditate facere quo maiores aperiam iure ab consectetur vitae eius perspiciatis fugiat! Deserunt voluptate inventore, minus officiis alias omnis numquam nemo, doloremque optio corrupti ratione ipsum nostrum dicta, velit impedit cum molestias repellat? 
+                            </p>
+                        </div>
+                    </div>
+                 
+             <!--ABOUT SECTION END-->
+                </section>
+
+            <!--PORTFOLIO SECTION START-->
+            <section id="portfolio">
+                <h2 class="w3-black w3-white">Portfolio</h2>
+
+                    <div class="w3-row-padding">
+
+                        <article class="w3-col m4 w3-center">
+                        <div class="w3-card"> 
+                            <h3>Séminaire</h3>
+                            <img src="assets/image/séminaire.jpg" alt="séminaire" class="w3-image ">
+                        </div>
+                        </article>
+                        
+                
+                        <article class="w3-col m4 w3-center">
+                        <div class="w3-card"> 
+                            <h3>Développement personnel</h3>
+                            <img src="assets/image/training.jpg" alt="training" class="w3-image">
+                        </div>
+                        </article>
+
+                        <article class="w3-col m4 w3-center">
+                        <div class="w3-card"> 
+                            <h3>Restaurant 3</h3>
+                            <img src="assets/image/consulting.jpg" alt="consulting" class="w3-image">
+                        </div>
+                        </article>
+
+                    </div>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex, repudiandae nisi beatae unde dicta aspernatur est asperiores numquam sequi voluptates quisquam sapiente a ipsam sit dolorem, quas sunt fugit quod. Nostrum ratione harum nemo, veniam minus praesentium perferendis vel porro nulla atque. Id similique minus commodi. Magni excepturi iure voluptate. Voluptate modi tempora distinctio quos quae ea, laborum optio dolorum iste nesciunt cupiditate eaque doloribus assumenda maxime culpa expedita. Quidem enim similique non. Officia expedita maxime vel est optio ratione quasi eum itaque. Quisquam explicabo officia totam, esse modi culpa rerum odit dolorum in optio maiores exercitationem labore dolores, neque illo porro! Quos eligendi repudiandae perspiciatis, hic animi exercitationem natus? Cupiditate facere quo maiores aperiam iure ab consectetur vitae eius perspiciatis fugiat! Deserunt voluptate inventore, minus officiis alias omnis numquam nemo, doloremque optio corrupti ratione ipsum nostrum dicta, velit impedit cum molestias repellat? 
+                    </p>
+            <!--PORTFOLIO SECTION END-->
+            </section>
+
+            <!--CONTACT SECTION START-->
+             <section id="contact">
+                <h2 class="w3-black w3-white">Contact</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam at, nesciunt est, velit labore magnam reiciendis possimus maiores earum ut eius quisquam, ratione odit dolores deleniti? Aliquam consectetur qui distinctio tempore, cupiditate aperiam sequi incidunt doloribus perferendis odit soluta eius corrupti illum laudantium architecto repellat rem fugit quis earum quibusdam facilis voluptatibus! Recusandae dolorum hic harum corrupti quae nostrum voluptatibus labore ut nobis cupiditate sequi fuga beatae vero vel iusto qui non ullam, ipsum quaerat. Delectus quo pariatur modi obcaecati, quia id praesentium dignissimos rerum suscipit aspernatur officia laudantium ad placeat deleniti veritatis. Labore quibusdam eius iure incidunt quos vitae? Officiis consectetur facere placeat inventore deserunt eveniet nisi perferendis voluptatem, odit aliquid non, fuga minima natus similique, enim quisquam quo doloremque sit! Minima eius harum tempora ducimus repudiandae incidunt amet dolore eum fugiat. At non corporis eius expedita inventore repellendus iure quos fugiat nesciunt maxime accusamus culpa autem, pariatur eos adipisci. Quaerat nisi nihil et. Dolorum nobis facilis eum, necessitatibus aperiam commodi reprehenderit aspernatur labore totam eaque, veniam tenetur, vero amet maiores earum sed repellat exercitationem fugit odit doloribus numquam iste? Consectetur pariatur, illo expedita quos enim, impedit harum aspernatur cumque quaerat dolorum architecto consequatur eos eum et sequi animi?</p>
+            <!--CONTACT SECTION END-->
+            </section>
+
+<!--MAIN END-->
+    </main>
+
+<!--FOOTER START-->
+    <footer>
+            
+<!--FOOTER END-->
+    </footer>
+
+    <script>
+    function toogleNavbar()
+    {
+       var nav = document.getElementById("mobileNav");
+       nav.classList.toggle("w3-show");
+       // console.log(nav.classList);
+    }
+
+    function homeHideNavbar()
+    {
+        var nav = document.getElementById("mobileNav");
+        if (nav.classList.contains("w3-show")){
+            nav.classList.remove("w3-show"); 
+       }
+    }
+
+    function displayScrollToTopBtn(){
+            var btn = document.getElementById("btnToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                btn.classList.add("w3-show");
+            } else {
+                btn.classList.remove("w3-show");
+            }
+        }
+        window.addEventListener("scroll",function(){
+            displayScrollToTopBtn();
+        });
+    </script>
+
+</body>
+
+
+</html>
